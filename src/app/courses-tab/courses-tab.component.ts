@@ -24,13 +24,19 @@ T:any=[
       this.T=data.courses
     })
   }
-  goToEdit(courseId:any){
-    this.router.navigate([`edit-courses/${courseId}`])
+  goToEdit(id:any){
+    this.router.navigate([`edit-courses/${id}`])
   }
   delete(id:any){
     this.coursesService.deletecourse(id).subscribe((data)=>{
       console.log('this response from BE',data.isDeleted)
+      this.coursesService.getAllcoursees().subscribe((data)=>{
+        this.T=data.courses;
+      })
     })
+  }
+  goToInfo(id:any){
+    this.router.navigate([`course-info/${id}`])
   }
 
 }

@@ -11,12 +11,12 @@ export class CoursesService {
   addcourse(course: any){
     return this.http.post<{isAdded: boolean}>(this.courseUrl,course);}
   editcourse(courseObj: any){
-    return this.http.put(this.courseUrl,courseObj);}
+    return this.http.put<{isEdited:string}>(this.courseUrl,courseObj);}
   deletecourse(id: any){
     return this.http.delete<{isDeleted:boolean}>(`${this.courseUrl}/${id}`);}
   //response one object
   getcourseById(id: any){
-    return this.http.get(`${this.courseUrl}/${id}`);}
+    return this.http.get<{course:any}>(`${this.courseUrl}/${id}`);}
   getAllcoursees(){
     return this.http.get<{courses:any}>(this.courseUrl);}
 }

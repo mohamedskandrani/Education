@@ -14,6 +14,7 @@ import { EditCoursesComponent } from './edit-courses/edit-courses.component';
 import { EditTeacherComponent } from './edit-teacher/edit-teacher.component';
 import { TeacherInfoComponent } from './teacher-info/teacher-info.component';
 import { ClassesComponent } from './classes/classes.component';
+import { CourseInfoComponent } from './course-info/course-info.component';
 
 const routes: Routes = [
   {path: 'Home',component:HomeComponent},
@@ -24,12 +25,14 @@ const routes: Routes = [
   {path: 'add-teacher',component:AddTeacherComponent},
   {path: 'admin',component:AdminComponent},
   {path: 'SignUp',component:SignUpComponent},
+  {path: 'inscription',component:SignUpComponent},
   {path: 'Login',component:LogInComponent},
   {path: 'searchCourse',component:SearchCourseComponent},
   {path: 'Universities',component:UniversitiesComponent},
   {path: 'edit-courses/:id',component:EditCoursesComponent},
   {path: 'edit-teachers/:id',component:EditTeacherComponent},
-  {path: 'teacher-info/:id',component:TeacherInfoComponent}
+  {path: 'teacher-info/:id',component:TeacherInfoComponent},
+  {path: 'course-info/:id',component:CourseInfoComponent}
 
 ];
 

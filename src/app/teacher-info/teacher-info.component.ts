@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TeachersService } from '../services/teachers.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class TeacherInfoComponent implements OnInit {
   teacher:any;
   id:any;
+  
 
   constructor(
     private teacherService:TeachersService,

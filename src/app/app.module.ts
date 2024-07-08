@@ -35,6 +35,7 @@ import{HttpClientModule} from "@angular/common/http";
 import { TeacherInfoComponent } from './teacher-info/teacher-info.component';
 import { ClassesComponent } from './classes/classes.component';
 import { ClassComponent } from './class/class.component';
+import { CourseInfoComponent } from './course-info/course-info.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { ClassComponent } from './class/class.component';
     EditCoursesComponent,
     TeacherInfoComponent,
     ClassesComponent,
-    ClassComponent
+    ClassComponent,
+    CourseInfoComponent
   ],
   imports: [
     BrowserModule,
