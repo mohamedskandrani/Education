@@ -1,17 +1,19 @@
 // import mongoose module
-const mongoose=require("mongoose");
+const mongoose = require("mongoose");
 //create match schema 
-const usersSchema=mongoose.Schema({
-    firstName:String,
-    lastName:String,
-    age:Number, 
-    address:String,
-    email:String, 
-    pwd:String,
-    confirmPassword:String, 
-    role:String,     
+const usersSchema = mongoose.Schema({
+    firstName: String,
+    lastName: String,
+    age: Number,
+    address: String,
+    email: String,
+    pwd: String,
+    confirmPassword: String,
+    role: String,
+    path: String,
+
 });
 //affect name to matchSchema
-const users=mongoose.model("users",usersSchema);
+const users = mongoose.model("users", usersSchema);
 //make model exportable
-module.exports=users;
+module.exports = users;
